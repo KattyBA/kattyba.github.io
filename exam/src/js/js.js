@@ -8,7 +8,7 @@ $(function() {
             dataType: 'json',
             cache: false,
             success: function(data){
-                
+
                 if (data.hits) {
                     $(".grid").remove();
                     var piclist = tmpl($('#activity__template').html(), {data: data});
@@ -32,7 +32,7 @@ $(function() {
 
     var inputWords = ['sun', 'snow', 'snowboard', 'flowers', 'forest', 'fishing', 'sea', 'mountain'];
     var randomWords = Math.floor(Math.random() * inputWords.length);
-    console.log(inputWords[randomWords]);
+
     getImagesByRequest(inputWords[randomWords]);
     var buttonSearch = $('.search__button');
     $('.search__button').click(function(e) {
