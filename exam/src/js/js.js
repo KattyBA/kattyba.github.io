@@ -11,14 +11,7 @@ $(function() {
             $(".grid").remove();
             var piclist = tmpl($('#activity__template').html(), {data: data});
             $('.activity .wrapper').append(piclist);
-console.log(data);
-            $('.grid').isotope({
-                itemSelector: '.grid-item',
-                layoutMode: 'packery',
-                packery: {
-                    gutter: 0
-                }
-            });
+
 
         }
     });
