@@ -10,8 +10,8 @@ $(function() {
             success: function(data){
                 if (data.hits) {
                     $(".grid").remove();
-                    var piclist = tmpl($('#activity__template').html(), {data: data});
-                    $('.activity .wrapper').append(piclist);
+                    // var piclist = tmpl($('#activity__template').html(), {data: data});
+                    // $('.activity .wrapper').append(piclist);
 
                     $('.grid').isotope({
                         itemSelector: '.grid-item',
