@@ -213,13 +213,13 @@
     </footer>
     <script type="text/template" id="activity__template">
         <div class="grid">
-            <% for (var i = 0; i < data.hits.length; i++) { %>
+            <% for (var i = 0; i < 5; i++) { %>
                 <% if (i === 4 || i === 5) { %>
                  <div class="grid-item grid-item--width2">
                 <% } else { %>
                      <div class="grid-item">
                 <% } %>
-                     <img src="<%= hello %>">
+                     <p>"<%= hello %>"></p>
 
                  </div>
             <% } %>
