@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width">
   <title>Urlaubsglück</title>
   <link rel="stylesheet" href="dist/css/style.min.css">
-  <!--[if lt IE 9]>
+  <!--[if lt IE 8]>
   <link href="dist/css/ie8.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="dist/js/ie/html5shiv.min.js"></script>
   <![endif]-->
+  <!--[if lte IE 9]>
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.3/jquery.xdomainrequest.min.js">
+<![endif]-->
   <script src="src/js/libs/jquery-1.9.1.min.js"></script>
   <script src="src/js/libs/isotope.pkgd.min.js"></script>
   <script src="src/js/libs/packery-mode.pkgd.min.js"></script>
@@ -177,7 +181,6 @@
     <section class="activity">
         <div class="wrapper">
             <h3 class="activity__title title">Discover holiday activity ideas</h3>
-            <div class="grid"></div>
         </div>
     </section>
     <section class="search">
@@ -212,10 +215,9 @@
     </footer>
     <script type="text/template" id="activity__template">
         <div class="grid">
+            <p>hello</p>
             <% for (var i = 0; i < 5; i++) { %>
-
                      <p>hello</p>
-
             <% } %>
         </div>
     </script>
