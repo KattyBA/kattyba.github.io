@@ -215,16 +215,16 @@
         <h1 class="title">Hello</h1>
         <div class="grid">
 
-            <!-- <% for (var i = 0; i < data.images.length; i++) { %>
-                <% if (i === 4 || i === 5) {  %>
+            <% for (var i = 0; i < data.hits.length; i++) { %>
+                <% if (i === 4 || i === 5) { %>
                  <div class="grid-item grid-item--width2">
                 <% } else { %>
                      <div class="grid-item">
                 <% } %>
-                     <img src="<%= data.images[i].imageurl %>">
-                     <span><%= data.images[i].word %></span>
+                     <img src="<%= data.hits[i].webformatURL %>">
+
                  </div>
-            <% } %> -->
+            <% } %>
         </div>
     </script>
 </body>
