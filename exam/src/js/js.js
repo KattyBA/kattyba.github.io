@@ -1,9 +1,9 @@
 $(function() {
 
-    function getImagesByRequest(phrase) {
+    function getImagesByRequest() {
 
         $.ajax({
-        url: 'https://pixabay.com/api/?key=2271973-553054d4a3087a5229bd26af2&q=' + phrase + '&orientation=horizontal&image_type=photo&min_width=410&min_height=620&per_page=7',
+        url: 'https://pixabay.com/api/?key=2271973-553054d4a3087a5229bd26af2&q=flower&orientation=horizontal&image_type=photo&min_width=410&min_height=620&per_page=7',
         type: "GET",
         dataType: "json",
         cache: false,
@@ -11,7 +11,7 @@ $(function() {
             $(".grid").remove();
             var piclist = tmpl($('#activity__template').html(), {data: data});
             $('.activity .wrapper').append(piclist);
-
+console.log(data);
             $('.grid').isotope({
                 itemSelector: '.grid-item',
                 layoutMode: 'packery',
@@ -33,7 +33,7 @@ var buttonSearch = $('.search__button');
 $('.search__button').click(function(e) {
     e.preventDefault();
     var searchField = $(".input__form").val();
-    getImagesByRequest(searchField);
+    getImagesByRequest();
 })
 
             $('.jcarousel').jcarousel({
