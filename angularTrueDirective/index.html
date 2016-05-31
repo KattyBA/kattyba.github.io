@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Template Derective</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+
+</head>
+<body>
+    <div ng-controller="bookCntl">
+        <div>My ctrl name is {{name}}</div>
+        <div>My ctrl color is {{color}}</div>
+        <button ng-click="revers()">My revers</button>
+        <div></div>
+        -----------------------------------
+        <book name={{name}} color="color" revers="revers()"></book> // color= ( ) "color" - переменная, котор-ую мы хотим получить из контроллера
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
