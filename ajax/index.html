@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="loadPhones()">Загрузить phones.json!</button>
+    <script>
+        function loadPhones() {
+            var whr = new XMLHttpRequest();
+
+            whr.open('GET', 'file.json', true);
+            xhr.send();
+            console.log(whr.status);
+        }
+    </script>
+</body>
+</html>
