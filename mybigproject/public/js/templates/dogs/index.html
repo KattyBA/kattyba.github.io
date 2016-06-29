@@ -1,0 +1,15 @@
+<div>
+        <div class="row">
+            <div ng-repeat="dog in dogsCtrl.dogs">
+                <a href="#/dogs/{{dog.id}}">
+                    <figure class="col-md-4 col-sm-6">
+                        <img ng-src="{{dog.imageSmall}}" class="img-responsive" width="250px">
+                        <figcaption>
+                            <h5>{{dog.breed}}</h5>
+                            <p>{{dog.descriptionSmall}}</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+</div>

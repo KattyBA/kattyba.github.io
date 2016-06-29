@@ -1,0 +1,20 @@
+.picture_dog {
+    max-height: 400px;
+    margin: auto;
+}
+.border {
+    padding: 20px;
+    border: 2px solid #000;
+    background: #f5a;
+    position: relative;
+}
+.cat_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #f5a;
+    box-sizing: border-box;
+    padding: 20px;
+}
