@@ -9,7 +9,7 @@ module.exports = function(app) {
     });
 
     app.get('/dogs/:id', function(req, res) {
-        var dogId = parseInt(req.param('id'), 10);
+        var dogId = parseInt(req.params.id, 10);
         res.json(Dogs.get(dogId) || {});
     });
 };

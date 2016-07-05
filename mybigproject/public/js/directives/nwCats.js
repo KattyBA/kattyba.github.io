@@ -14,6 +14,8 @@ angular.module('myApp')
            },
            link: function(scope, elem, attrs) {
                elem.on('click', function() {
+                   elem.siblings().children('.cat_description').addClass('hidden');
+                   console.log( elem.siblings().children('.cat_description'));
                    elem.find('.cat_description').toggleClass('hidden');
                });
                console.log(attrs.breed);

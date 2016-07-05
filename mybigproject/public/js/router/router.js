@@ -18,4 +18,5 @@ angular.module('myApp').config(function($routeProvider) {
             controller: "CatsController",
             controllerAs: 'catsCtrl'
         })
+        .otherwise({redirectTo: '/dogs'})
 });

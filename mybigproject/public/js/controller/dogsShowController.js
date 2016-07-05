@@ -4,7 +4,7 @@
 angular.module('myApp')
     .controller('DogsShowController', ['$http', '$routeParams', function($http, $routeParams) {
         var that = this;
-      $http.get('http://localhost:8008/dogs/' + $routeParams.id).success(function(data) {
+      $http.get('http://192.168.0.105:8008/dogs/' + $routeParams.id).success(function(data) {
           that.dog = data;
       }).error(function(error) {
           return error;

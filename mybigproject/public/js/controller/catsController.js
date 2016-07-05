@@ -4,7 +4,7 @@
 angular.module('myApp')
     .controller('CatsController',['$http', function($http) {
         var controller = this;
-       $http.get('http://localhost:8008/cats').success(function(data) {
+       $http.get('http://192.168.0.105:8008/cats').success(function(data) {
            controller.cats = data.cats;
        });
     }]);
